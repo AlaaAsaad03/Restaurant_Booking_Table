@@ -1,79 +1,68 @@
-# Restaurant Table Booking System
+# Table Booking System
 
-A web-based **Restaurant Table Booking System** that allows users to reserve tables online. This project provides a seamless reservation experience for customers while helping restaurants manage bookings efficiently.
+## Overview
+The Table Booking System is a web-based application designed to facilitate reservations for tables in restaurants, cafes, or event venues. This project was developed using Angular for the frontend and .NET for the backend, with APIs for seamless communication. It supports user authentication, table selection, booking management, and an admin panel for managing reservations.
 
 ## Features
+- **User Authentication:** Secure login and registration.
+- **Table Selection:** Users can view available tables and select their preferred time slots.
+- **Booking Management:** Users can create, modify, or cancel bookings.
+- **Admin Panel:** Admins can manage bookings, view reports, and configure table availability.
+- **Responsive Design:** Optimized for various devices and screen sizes.
+- **Email Notifications:** Users receive confirmation emails for successful reservations.
+- **API Integration:** Uses REST APIs to fetch and update booking data.
 
-### User Features
-- **Table Reservation:** Users can book tables by selecting date, time, and party size.
-- **Account Management:** Sign up, log in, and manage reservations.
-- **Real-time Availability:** Check available tables instantly.
-- **Notifications:** Get confirmation emails or SMS for bookings.
+## Technologies Used
+### Frontend:
+- Angular
+- TypeScript
+- HTML, CSS, Bootstrap
 
-### Admin Features
-- **Dashboard:** View and manage reservations.
-- **Table Management:** Set table availability and capacity.
-- **Customer Insights:** Track frequent customers and reservations.
-- **Cancel/Modify Bookings:** Manage customer reservations easily.
+### Backend:
+- .NET Core
+- C#
+- Entity Framework
+- SQL Server (Database)
+- ASP.NET Web API
 
-## Tech Stack
-- **Frontend:** Angular Js
-- **Backend:** Node.js, Express.js
-- **Database:** MongoDB Atlas
-- **Authentication:** JWT (JSON Web Tokens)
-- **Deployment:** Cloudflare Pages (Frontend), Vercel/Render (Backend)
+### Deployment & Tools:
+- Docker (for containerization)
+- Azure (for hosting)
+- Visual Studio Code & Visual Studio (for development)
 
-## Installation & Setup
-
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/yourusername/restaurant-booking-system.git
-   cd restaurant-booking-system
+## Installation Guide
+### Steps to Run Locally
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-repo/table-booking.git
+   cd table-booking
    ```
-
-2. **Install Dependencies:**
-   - Backend:
-     ```bash
-     cd backend
-     npm install
-     ```
-   - Frontend:
-     ```bash
-     cd frontend
-     npm install
-     ```
-
-3. **Set Up Environment Variables:**
-   Create a `.env` file in the backend directory and configure:
-   ```env
-   MONGO_URI=your_mongodb_uri
-   JWT_SECRET=your_secret_key
+2. Install frontend dependencies:
+   ```sh
+   cd frontend
+   npm install
    ```
-
-4. **Run the Application:**
-   - Backend:
-     ```bash
-     npm run dev
+3. Start the Angular frontend:
+   ```sh
+   ng serve
+   ```
+4. Set up the backend:
+   - Open the `backend` folder in Visual Studio.
+   - Configure the database connection in `appsettings.json`.
+   - Run database migrations:
+     ```sh
+     dotnet ef database update
      ```
-   - Frontend:
-     ```bash
-     npm run dev
+   - Start the backend server:
+     ```sh
+     dotnet run
      ```
+5. Access the application:
+   - Open `http://localhost:4200` in your browser.
 
-5. **Access the Application:**
-   Open `http://localhost:5173` in your browser.
+analytics and reporting features for admins.
 
-## Future Enhancements
-- **Payment Integration** for prepaid reservations.
-- **AI-powered Table Suggestions** based on customer preferences.
-- **Multilingual Support** for broader accessibility.
-
-## Contributing
-We welcome contributions! Fork the repo, create a feature branch, and submit a pull request.
 
 ## License
-This project is licensed under the **MIT License**.
-
----
-
+This project is licensed under the MIT License - see the LICENSE file for details.
 
