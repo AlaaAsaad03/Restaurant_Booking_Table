@@ -17,7 +17,7 @@ A web-based **Restaurant Table Booking System** that allows users to reserve tab
 - **Cancel/Modify Bookings:** Manage customer reservations easily.
 
 ## Tech Stack
-- **Frontend:** React.js (Vite), Tailwind CSS
+- **Frontend:** Angular Js
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB Atlas
 - **Authentication:** JWT (JSON Web Tokens)
